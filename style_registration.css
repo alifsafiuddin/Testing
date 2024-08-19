@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(bglogin2.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  width: 420px;
+  color: #fff;
+  border-radius: 12px;
+  padding: 30px 40px;
+  margin-left: 600px;
+}
+
+.title {
+  font-size: 36px;
+  text-align: center;
+}
+
+.registration-type-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+button {
+  width: 45%;
+  height: 45px;
+  background: #59F756;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+#customerForm,
+#sellerForm {
+  display: none;
+}
+
+.user-details {
+  margin: 20px 0;
+}
+
+.input-box {
+  margin: 10px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  border: 2px solid rgba(255, 255, 255, .2);
+  border-radius: 40px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.button {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button input[type="submit"] {
+  width: 100%;
+  height: 45px;
+  background: #59F756;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}

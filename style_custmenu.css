@@ -1,0 +1,297 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: 0.3s;
+}
+body{
+    background: #e9eaf0;/*kelabu cair*/
+}
+section .container{
+    margin: 1em;
+    width: 100%;
+}
+section .side-nav{
+    width: 30%;
+    height:1300px;
+    background-color: #B5B7B8; /*kelabu pekat*/
+}
+section .side-bar-option{
+    width: 50%;
+    height:100%;
+    background-color: #e9eaf0; 
+}
+section .product-option ul li{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    background-color: #B5B7B8;
+}
+
+
+/* header */
+
+header{
+    background-color: #5FFA3D;
+    background-image: linear-gradient(0deg, #5FFA3D, #2AA1A3);
+    height: 125px;
+}
+header nav{
+    width: 100%;
+    margin: auto;
+}
+header nav .logo-search{ /*align semua item dalam header*/
+    width: 200px; /* Adjust the width as needed */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 35px;
+}
+header nav .logo-search .logo{ /*adjust font logo pasarsiswa*/
+    color: #fff;
+    text-transform: lowercase;
+    font-size: 35px;
+    font-weight: bold;
+    padding-left: 30px;
+}
+header nav .logo-search .logo span{ /*adjust font logo pasarsiswa*/ 
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+}
+header nav .logo-search .search-box{ /*adjust searchbox*/ 
+    width: 500px;
+    height: 40px;
+    position: relative;
+}
+header nav .logo-search .search-box input{ /*adjust searchbox Seach for... input*/ 
+    width: 100%;
+    height: 100%;
+    padding: 0 10px 0 12px;
+}
+header nav .logo-search .search-box i{ /*adjust searchbox icon*/ 
+    position: absolute;
+    right: 2;
+    top: 10;
+    height: 100%;
+    width: 55px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #5FFA3D ;
+    border: 6px solid white;
+}
+header nav .logo-search .icon a{ /*adjust nav icon*/ 
+    color: #fff;
+    margin-left: 10px;
+    font-size: 25px;
+}
+header nav .logo-search .icon span{
+    color: #fff;
+    margin-left: 10px;
+    font-size: 15px;
+    text-align: center;
+    font-family: sans-serif;
+}
+header nav .logo-search .icon a:hover{
+    color: #fccb3f;
+}
+header nav .logo-search .icon a span:hover{
+    color: #fccb3f;
+}
+header nav .logo-search .icon2 a {
+    color: #fff;
+    font-size: 40px;  
+    padding-right: 30px;
+}  
+header nav .logo-search .icon2 a:hover{
+    color: #fccb3f;
+}
+
+
+
+/*start container side-nav*/
+
+.container .side-nav{
+    height: 100px;
+    overflow: hidden;
+    padding: 20px 10px 20px 10px;
+}
+.container .side-nav ul li{
+    padding: 10px 20px;
+    color: #000000;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 5px 0 20px 0;
+    text-align: center;
+}
+.container .side-nav ul li a{
+    color: #black;
+}
+.container .side-nav ul li:hover{
+    background-color: #D4F1C9;
+}
+
+
+
+/*start container side-bar-option*/
+
+.container .side-bar-option{
+    overflow: hidden;
+    padding: 10px 10px 20px 10px;
+}
+.container .side-bar-option ul li{
+    padding: 35px 0px;
+    color: #000000;
+    cursor: pointer;
+    background-color: #fff;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    font-weight: bold;
+}
+.container .side-bar-option ul li img{
+    width: 80%;
+}
+.container .side-bar-option ul li a{
+    color: #black;
+    display: block;
+}
+.container .side-bar-option ul li:hover{
+    background-color: #D4F1C9;
+}
+
+
+/*start container product-option*/
+
+.product-container {
+  width: 1200px; /* Set your desired fixed width */
+  /* Add other styles as needed */
+}
+
+.container .product-option{
+    overflow: hidden;
+    padding: 15px 10px 15px 10px;
+}
+.container .product-option ul li{
+    background-color: #fff;
+}
+.container .product-option ul li img{
+    width: 100%;
+
+}
+.container .product-option .img-display{
+    overflow: hidden;
+}
+.container .product-option .product-content{
+    padding: 2rem 1rem;
+}
+.container .product-option .product-title{
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: 700;
+    position: relative;
+    color: #12263a;
+    margin: 1rem 0;
+}
+.container .product-option .product-rating{
+    color: #5FFA3D;
+}
+.container .product-option .product-rating span{
+    font-weight: 600;
+    color: #5FFA3D;
+    font-size: 10px;
+}
+.container .product-option .product-rating i {
+    font-size: 10px;
+}
+
+.container .product-option .product-ratings span{
+    font-size: 10px;
+    color: #000000;
+    font-weight: bold;
+}
+.container .product-option .product-sold span{
+    font-size: 10px;
+    font-weight: bold;
+    color: #000000;
+}
+.container .product-option .product-price{
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #5FFA3D;
+}
+.container .product-option .product-price span{
+    font-size: 2rem;
+    font-weight: 600;
+}
+.container .product-option .product-detail ul li{
+    margin: 0px;
+    font-size: 0.9rem;
+    list-style: none;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.container .product-option .product-detail ul li span{
+    font-weight: 400;
+}
+.container .product-option .purchase-info{
+    margin: 1.5rem 0;
+}
+.container .product-option .purchase-info .btn{
+    border: 1.5px solid #ddd;
+    text-align: center;
+    padding: 0.45rem 0.8rem;
+    outline: 0;
+    margin-right: 0.2rem;
+    margin-bottom: 1rem;
+}
+.container .product-option .purchase-info .btn{
+    cursor: pointer;
+    color: #fff;
+}
+.container .product-option .purchase-info .btn:first-of-type{
+    background: #5FFA3D;
+}
+.container .product-option .purchase-info .btn:last-of-type{
+    background: #5FFA3D;
+}
+.container .product-option .purchase-info .btn:hover{
+    background: #B8FF95;
+    border-color: transparent;
+    color: #fff;
+}
+.container .product-option .social-links{
+    display: flex;
+    align-items: center;
+}
+.container .product-option .social-links {
+    font-size: 0.9rem;
+    list-style: none;
+    font-weight: 600;
+}
+.container .product-option .social-links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    color: #000;
+    border: 1px solid #000;
+    margin: 0 0.2rem;
+    border-radius: 50%;
+    text-decoration: none;
+    font-size: 0.8rem;
+    transition: all 0.5s ease;
+}
+.container .product-option .social-links a:hover{
+    background: #000;
+    border-color: transparent;
+    color: #fff;
+}
+
+

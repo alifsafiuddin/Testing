@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Export to Excel</title>
+  <script src="https://raw.githack.com/rainabba/jquery-table2excel/1.2.5/dist/jquery.table2excel.min.js"></script>
+</head>
+<body>
+
+  <table border="1" id="dataTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John Doe</td>
+        <td>john@example.com</td>
+        <td>555-1234</td>
+      </tr>
+      <tr>
+        <td>Jane Doe</td>
+        <td>jane@example.com</td>
+        <td>555-5678</td>
+      </tr>
+      <!-- Add more rows as needed -->
+    </tbody>
+  </table>
+
+  <button onclick="exportToExcel()">Export to Excel</button>
+
+  <script>
+    function exportToExcel() {
+      $("#dataTable").table2excel({
+        exclude: ".noExl",
+        name: "Worksheet Name",
+        filename: "data",
+        fileext: ".xls",
+        exclude_img: true,
+        exclude_links: true,
+        exclude_inputs: true
+      });
+    }
+  </script>
+
+</body>
+</html>
